@@ -1,9 +1,79 @@
 body{
     background-image: url("https://images.unsplash.com/photo-1530053969600-caed2596d242?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D");
-    background-size: 100%
+    background-size: 100%;
 }
 .titre{
     font-size:45px;
     text-align: center;
-    background-color: #000000;
-    color: #ffffff;
+    background-color: black;
+    color: pink;
+}
+*{
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: pink;
+    border-bottom: 2px solid pink;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+
+.sous{
+    display: none;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: black;
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
