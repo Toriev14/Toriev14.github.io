@@ -6,8 +6,17 @@ body{
     font-size:45px;
     text-align: center;
     background-color: black;
-    color: pink;
+    color: skyblue;
 }
+p{
+    color: blue;
+    font-size:50px
+}
+
+
+
+
+
 *{
     padding: 0px;
 }
@@ -26,7 +35,7 @@ nav ul{
 
 nav ul li{
     float: left;
-    width: 50%;
+    width: 25%;
     text-align: center;
     position: relative;
 }
@@ -40,40 +49,41 @@ nav ul::after{
 nav a{
     display: block;
     text-decoration: none;
-    color: pink;
-    border-bottom: 2px solid pink;
+    color: skyblue;
+    border-bottom: 2px solid skyblue;
     padding: 10px 0px;
 }
 
 nav a:hover{
-    color: purple;
-    border-bottom: 2px solid purple;
+    color: #4287f5;
+    border-bottom: 2px solid #4287f5;
 }
 
-.sous{
+.sous-menu{
     display: none;
     background-color: black;
     position: absolute;
     width: 100%;
     z-index: 1000;
 }
-nav > ul li:hover .sous{
+nav > ul li:hover .sous-menu{
     display: block;
 }
-.sous li{
+.sous-menu li{
     float: none;
     width: 100%;
     text-align: left;
 }
-.sous a{
+.sous-menu a{
     padding: 10px;
     border-bottom: none;
 }
-.sous a:hover{
+.sous-menu a:hover{
     border-bottom: none;
     background-color: black;
 }
-.deroulant > a::after{
+.bandeau > a::after{
     content:" ▼";
     font-size: 12px;
 }
+
