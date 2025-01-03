@@ -1,22 +1,64 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1530053969600-caed2596d242?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fHw%3D");
+    background-image: url("FD.png");
     background-size: 100%;
 }
+
 .titre{
     font-size:40px;
     text-align: center;
-    background-color: black;
+    background-color: #0d0d0d;
+    color: skyblue;
+} 
+
+.stitre{
+    font-size: 20px;    
     color: skyblue;
 }
-.construct{
-    color: yellow;
-    font-size: 20px;
-    text-align: center
+
+.text-index{
+    width: 50%;
+    list-style-type: none;
+    color: skyblue;
+    text-decoration: none;
 }
-.centre {
-    display:flex;
+
+.text1{
+    color: skyblue;
+}
+
+.textC{
+    text-align: center;
+    color: skyblue;
+    font-size: 20px;
+}
+
+
+.centre{
+    display: block;
     margin: auto;
 }
+.tableau{
+    border: 2px solid skyblue;
+    border-collapse: collapse;
+    text-decoration: none;
+    color: skyblue;
+}
+
+.case{
+    color: #4287f5;
+    text-decoration: none;
+}
+
+u{
+    text-decoration-color: #4287f5;
+}
+#HiHi{
+    font-size: 1px;
+    color: black;
+    text-align: center;
+}
+
+
 
 
 
@@ -29,10 +71,11 @@ body{
 
 nav{
     width: 100%;
-    margin: auto;
-    background-color: black;
+    margin: 0 auto;
+    background-color: #0d0d0d;
     position: sticky;
-    top: 0px;
+    top: 0px; 
+    z-index:1000;      
 }
 
 nav ul{
@@ -67,13 +110,14 @@ nav a:hover{
 
 .sous-menu{
     display: none;
-    background-color: black;
+    background-color: #0d0d0d;
     position: absolute;
     width: 100%;
-    z-index: 1000;
+    z-index:1000;
 }
 nav > ul li:hover .sous-menu{
     display: block;
+    z-index: 1000;
 }
 .sous-menu li{
     float: none;
@@ -86,10 +130,22 @@ nav > ul li:hover .sous-menu{
 }
 .sous-menu a:hover{
     border-bottom: none;
-    background-color: black;
+    background-color: #0d0d0d;
+
 }
 .bandeau > a::after{
     content:" ▼";
     font-size: 12px;
 }
+.home  > a::after{
+    color:transparent;
+    content:" ▼";
+    font-size:12px;
+}
 
+.construct{
+    color:rgb(255, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    background-image: url("https://media.istockphoto.com/id/1188381725/fr/vectoriel/illustration-de-fond-de-ligne-de-bande-de-danger.jpg?s=612x612&w=0&k=20&c=mtPfQV6oae62sZnaE-slOrzIjmwYo-ljziwGk-wQiMo=")   
+}
