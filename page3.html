@@ -10,7 +10,7 @@
     <body>
         <div>
             <p class='titre'>
-                L'eau presque réelle de Sea of Thieves
+                L'eau cheap de la majorité des jeux vidéo
             </p>
         </div>
         <nav>
@@ -38,42 +38,43 @@
                 </li>
             </ul>
         </nav>
-        <blockquote>
-            <div>
-                <p class="stitre"><u>Une exeption !?</u></p>                      
-                <blockquote>
-                    <p class="text-index" style="float:left">
-                        Si le monde du jeux-vidéo s’est mit d’accord que l’eau est impossible à bien simuler, un jeux est arriver pour prouver l’inverse et ce jeux c’est Sea of Thieves. 
-                    </p>                
-                    <img src="https://upload.wikimedia.org/wikipedia/fr/1/19/Sea_of_Thieves_Logo.png" height="10%" width="10%">
-                </blockquote>                   
-            </div>
-            <div>
-                <p class="stitre"><u>Comment ont-ils fait ?</u></p>                      
-                <blockquote>
-                    <p class="text1">
-                        Rare en développant Sea of Thieves ont réussite à crée une eau parfaite générer en temps réel sur des ordinateurs et consoles basique et pour ça ils se sont basé non pas sur les équations de Navier-Stokes mais sur la Transformation de Fourier qui ne traduit pas comment fonctionne la physique de l’eau mais le son. 
-                    </p>                
-                </blockquote>                   
+        <blockquote>   
+            <div class="text1">                      
+                la consommation due à la simulation de l’eau est donc possible à gérer dans des milieux plus riche comme le cinéma mais ça n’est pas le cas dans tout les domaines, pour les jeux-vidéo par exemple c’est un problème puisqu’ils doivent faire la même chose sur des machines mille fois moins puissantes, avec plus de fps et en temps réelle. Mais alors comment font ils ?                   
             </div>
             <br>
+            <div class="stitre">
+                <u>Les techniques les plus simple.</u>
+            </div> 
             <div>
-                <p class="stitre"><u>Comment l’océan de Sea of Thieves fonctionne ?</u></p>                      
                 <blockquote>
-                    <p class="text-index" style="float:left">
-                        Dans sea oh thieves l’océan est une addition de pleins de fréquences sonores sur laquelle a été ajouter une texture d’eau et grâce à cette technique pour simuler un océan déchaîner il suffit d’augmenter l’amplitude des ondes, les grandes vagues deviennent immense et et les plus petites deviennent grandes.<br> Pour les interactions avec l’océan on ajoute juste des ondes. Un bateau, un joueur et un boulet de canon, trois ondes de plus.<br> Comme c’est la surface qui change on ne touche jamais ni aux textures ni aux shaders et on peut donc ajouter de la houle selon la taille des vague que l’on connaît grâce à la Transformation de Fourier et ajouter de Subsurface Scattering qui permet de rendre le haut des plus grandes vagues plus transparents. 
-                    </p>                
-                    <img src="https://sotfr.net/wp-content/uploads/2021/10/Event.jpg" height="20%" width="20%">
-                </blockquote>                   
+                    <p class="text-index" style="float:left">Avant les années 2000 les zones aquatiques n’était que des sprites 2D bleu légèrement animée, mais, avec l’arrivée de processeurs plus puissants, de nouvelles techniques sont arrivées dont le normale mapping et le vertex displacement.</p>
+                    <img width="10%" height="10%" src="https://64.media.tumblr.com/2397dad2776446e09588d0f23f0717dc/1a461c959dd3a78d-79/s540x810/848d632425a91b6e965394627651ecafd4c717a8.gifv">
+                </blockquote>
+            </div>
+            <br>
+            <div class="text-index" style="float:left">
+                <u class="stitre">Le normale mapping :</u>
+                <br>              
+                <blockquote>
+                    <p>Les normales maps sont des shader qui agissent sur les textures et qui donnent une illusion de profondeur sans ajouter de polygones à afficher.<br> En en superposant deux désynchroniser avec quelques animations quand les objet interagissent avec l’eau et un floue bleuter quand le joueur et dans l’eau on obtient une eau basique pas très réaliste pour les interaction mais qui fonctionne.</p>
+                    <img width="45%" height="45%" class="centre" src="https://kosmonautblog.wordpress.com/wp-content/uploads/2017/03/watergif2_thumb2.gif">
+                </blockquote>
             </div>
             <div>
-                <p class="stitre"><u>Une différence impressionnante.</u></p>                      
-                <blockquote>
-                    <p class="text1">
-                        Avec cette technique Sea of Thieves à montrer qu’il est possible de simuler de l’eau extrêmement réaliste dans les jeux vidéo et, là ou les super-calculateurs prennent des heures pour crée un océan près rendue au cinéma, Sea of Thives prend pour le générer en temps réel 7,8 milliseconde. 
-                    </p>                
-                </blockquote>                   
+                <u class="stitre">Le vertex displacement :</u>
+                <br> 
+                <p class="text1">Le vertex displacement est une autre couche que l’on rajoute au dessus du shader et qui vas agir uniquement sur ce dernier pour apporter plus de profondeur et de détaille.<br> Dans la simulation de l’eau le vertex displacement permet une interaction réaliste entre l’eau et les hitbox des entités, il vas dire à la normale map de mettre plus de lumière entre deux zones d’ombres ce qui donne l’impression d’un pique entre deux creux et donc d’une ondulation lorsque les entités passe dans l’eau.</p>
+                <iframe class="centre" width="420" height="250" src="https://www.youtube.com/embed/Uc2jHETUF8Y" frameborder="0" allowfullscreen></iframe>
             </div>
+            <div class="stitre">
+                <u>Quelles sont les limites de ce système ?</u>
+            </div>
+            <blockquote>
+                <div class="text1">
+                    Bien que ces techniques permette de crée une eau presque photoréaliste selon les jeux, elles ce limitent à des étendues d’eau calme. Dés que l’on veux crée une eau agiter voir déchaîner cette technique ne suffit pas, il faudrait pour cela utiliser les équations de Navier-Stokes ce qui exploserait les ordinateurs et consoles trop peux puissant. Il est donc impossible de simuler une eau complètement réaliste dans le jeux-vidéo.
+                </div>
+            </blockquote>
             <br>
             <p class="stitre"><u>Pour ceux qui souhaiterait des informations plus précises.</u></p>
             <div style="clear:both"></div>
@@ -81,18 +82,20 @@
             <table class="tableau">
                 <tr>
                     <td class="tableau" width="25%"><strong>Sujet du cite</strong></td>
-                    <td class="tableau" width="25%">Transformation de Fourier</td>
-                    <td class="tableau" width="25%">Subsurface scattering</td>
-                    <td class="tableau" width="25%">Comment Rare on transformer le son en eau</td>
+                    <td class="tableau" width="25%">Le Normale Mapping</td>
+                    <td class="tableau" width="25%">Le Vertex Displacement</td>
+                    <td class="tableau" width="25%">Les Hitbox</td>
+                    <td class="tableau" width="25%">Tester une Normale Map</td>
                 </tr>
                 <tr>
                     <td class="tableau" width="25%"><strong>Lien du cite</strong></td>
-                    <td class="tableau"width="25%"><a class="case" href="https://fr.wikipedia.org/wiki/Transformation_de_Fourier">https://fr.wikipedia.org/wiki/Transformation_de_Fourier</a></td>
-                    <td class="tableau"width="25%"><a class="case" href="https://en.wikipedia.org/wiki/Subsurface_scattering">https://en.wikipedia.org/wiki/Subsurface_scattering</a></td>
-                    <td class="tableau"width="25%"><a class="case" href="https://www.researchgate.net/publication/264839743_Simulating_Ocean_Water">https://www.researchgate.net/publication/264839743_Simulating_Ocean_Water</a></td>
+                    <td class="tableau"width="25%"><a class="case" href="https://fr.wikipedia.org/wiki/Normal_mapping">https://fr.wikipedia.org/wiki/Normal_mapping</a></td>
+                    <td class="tableau"width="25%"><a class="case" href="https://en.wikipedia.org/wiki/Displacement_mapping">https://en.wikipedia.org/wiki/Displacement_mapping</a></td>
+                    <td class="tableau"width="25%"><a class="case" href="https://fr.wikipedia.org/wiki/Masque_de_collision">https://fr.wikipedia.org/wiki/Masque_de_collision</a></td>
+                    <td class="tableau"width="25%"><a class="case" href="https://cpetry.github.io/NormalMap-Online/">https://cpetry.github.io/NormalMap-Online/</a></td>
                 </tr>
             </table>
             </blockquote>
-        </blockquote>
+        </blockquote>                      
     </body>
 </html>
