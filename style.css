@@ -53,7 +53,7 @@ u{
     text-decoration-color: #4287f5;
 }
 #HiHi{
-    font-size: 1px;
+    font-size: 10px;
     color: black;
     text-align: center;
 }
@@ -141,11 +141,4 @@ nav > ul li:hover .sous-menu{
     color:transparent;
     content:" ▼";
     font-size:12px;
-}
-
-.construct{
-    color:rgb(255, 0, 0);
-    font-size: 20px;
-    text-align: center;
-    background-image: url("https://media.istockphoto.com/id/1188381725/fr/vectoriel/illustration-de-fond-de-ligne-de-bande-de-danger.jpg?s=612x612&w=0&k=20&c=mtPfQV6oae62sZnaE-slOrzIjmwYo-ljziwGk-wQiMo=")   
 }
